@@ -52,7 +52,7 @@
     </header>
 
     <nav
-        class="sticky top-0 flex items-center justify-start h-[85px] px-6 py-4 mylg:py-0 transition-all duration-300 xl:justify-between mylg:h-28 bg-lightgray xl:px-28">
+        class="sticky top-0 z-10 flex items-center justify-start h-[85px] px-6 py-4 mylg:py-0 transition-all duration-300 xl:justify-between mylg:h-28 bg-lightgray xl:px-28">
         <a class="mr-8 mylg:hidden" href="#">
             <img class="w-8" src="./assets/bigHam.svg" alt="Hamburger Bars">
         </a>
@@ -88,17 +88,21 @@
 
     </nav>
 
-    <main class="h-lvh">
+    <main class="">
         <section class="h-[400px] mylg:h-[601px] relative pt-px">
-            <div class="absolute h-full -mt-px overflow-hidden -z-10">
+            <div class="absolute h-full -mt-px overflow-hidden">
                 <img class="object-cover h-full"
                     src="https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg"
                     alt="banner1">
-                <div class="absolute bottom-0 w-full mylg:bottom-auto mylg:top-[260px] mylg:left-28 mylg:w-[380px] xl:w-[480px] bg-darkgray/90 text-lightgray p-5">
-                    <h1 class="text-xl mylg:text-2xl font-bold tracking-wide leading-tight">Applications for International Students 2024/2025 are open!</h1>
-                    <p class="mt-4 hidden mylg:block">There are over 700 vacancies for 54 undergraduate and integrated master's courses at U.Porto.
+                <div
+                    class="absolute bottom-0 w-full mylg:bottom-auto mylg:top-[260px] mylg:left-28 mylg:w-[380px] xl:w-[480px] bg-darkgray/90 text-lightgray p-5">
+                    <h1 class="text-xl mylg:text-2xl font-bold tracking-wide leading-tight">Applications for
+                        International Students 2024/2025 are open!</h1>
+                    <p class="mt-4 hidden mylg:block">There are over 700 vacancies for 54 undergraduate and integrated
+                        master's courses at U.Porto.
                         Applications (1st phase) until 7th February!</p>
-                    <button class="mb-10 mt-3 mylg:mb-0 mylg:mt-8 px-2 bg-accent text-darkgray font-extrabold">See More</button>
+                    <button class="mb-10 mt-3 mylg:mb-0 mylg:mt-8 px-2 bg-accent text-darkgray font-extrabold">See
+                        More</button>
                 </div>
             </div>
             <div class="mt-[100px] mylg:mt-[260px] text-white flex justify-between">
@@ -112,9 +116,132 @@
 
         </section>
 
-        <section class="def-pad">
-            <div>
-                fasdfsadf
+        <section class="def-pad py-14 xl:py-28">
+            <h1 class="text-4xl xl:text-5xl font-light text-accent">Study</h1>
+            <div class="mt-5 xl:mt-8 xl:grid xl:grid-cols-3">
+                <h2 class="text-3xl font-bold">Your future is here!</h2>
+                <p class="col-span-2 text-lg font-light mt-6 xl:mt-0">
+                    Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the
+                    U.Porto offer unique conditions to those who want to build an academic path of excellence and
+                    properly valued by the labour market.
+                </p>
+            </div>
+            <hr class="my-14" />
+            <h2 class="text-3xl font-bold">Which course are you looking for?</h2>
+            <div class="xl:grid xl:grid-cols-3 xl:gap-7 mt-6">
+                <div class="space-y-4 xl:col-span-2">
+                    <select class="w-full">
+                        <option value="all">All</option>
+                        <option value="all">Bachelor's and Integrated Master's Degree</option>
+                        <option value="all">Master's Degrees</option>
+                        <option value="all">Doctorates</option>
+                    </select>
+                    <input class="w-full py-3" placeholder="Please enter course keywords..." type="text">
+                    <button class="bg-accent w-full py-3 text-3xl text-white font-bold">Search</button>
+                </div>
+                <div class="text-2xl flex flex-col font-light gap-1.5 mt-6 xl:mt-0">
+                    <h3 class="font-normal">Courses from A to Z:</h3>
+                    <a class="underline" href="#">Bachelor's and Integrated Master’s Degrees</a>
+                    <a class="underline" href="#">Master’s Degrees</a>
+                    <a class="underline" href="#">Doctorates</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="def-pad bg-lightgray/30 py-28">
+            <div class="flex justify-between items-center mylg:items-end">
+                <h1 class="text-5xl text-accent font-light">News</h1>
+                <a class="text-accent font-bold flex items-center gap-2 group" href="#">
+                    All news <span
+                        class="bg-accent text-gray-200 text-xs h-[18px] aspect-square flex-center rounded-full group-hover:translate-x-1 transition-transform"><i
+                            class="fa-solid fa-angle-right"></i></span>
+                </a>
+            </div>
+
+            <div class="flex mt-12 gap-10 overflow-hidden">
+                <div class="min-w-[380px] h-[555px] bg-white grid grid-rows-2">
+                    <div class="p-5 flex flex-col">
+                        <p class="text-accent">Campus e Comunidade</p>
+                        <a href="#">
+                            <h2 class="mt-4 text-[22px] font-bold leading-7">José Manuel Varejão é o novo Pró-Reitor
+                                para a Comunicação e Alumni
+                            </h2>
+                        </a>
+                        <time class="mt-auto">10 January 2025</time>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="h-full object-cover"
+                            src="https://noticias.up.pt/wp-content/uploads/2025/01/jose-varejao-pro-reitor-uporto.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="min-w-[380px] h-[555px] bg-white grid grid-rows-2">
+                    <div class="p-5 flex flex-col">
+                        <p class="text-accent">Campus e Comunidade</p>
+                        <a href="#">
+                            <h2 class="mt-4 text-[22px] font-bold leading-7">FEUP celebra 188 anos com muitas novidades
+                                e de portas abertas
+                            </h2>
+                        </a>
+                        <time class="mt-auto">09 January 2025</time>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="h-full object-cover"
+                            src="https://noticias.up.pt/wp-content/uploads/2025/01/Dia-da-FEUP.jpg" alt="">
+                    </div>
+                </div>
+                <div class="min-w-[380px] h-[555px] bg-white grid grid-rows-2">
+                    <div class="p-5 flex flex-col">
+                        <p class="text-accent">No Mundo</p>
+                        <a href="#">
+                            <h2 class="mt-4 text-[22px] font-bold leading-7">FADEUP reforça estatuto de melhor escola de
+                                desporto portuguesa
+                            </h2>
+                        </a>
+                        <time class="mt-auto">06 January 2025</time>
+                    </div>
+                    <div class="overflow-hidden">
+                        <img class="h-full object-cover"
+                            src="https://noticias.up.pt/wp-content/uploads/2025/01/Noticia-UP-18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-11 mt-10 flex gap-1.5">
+                <button class="h-full aspect-square bg-neutral-400 text-gray-100">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="h-full aspect-square bg-accent text-gray-100">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="flex items-start def-pad gap-10">
+            <div class="relative w-5/12">
+                <img class="absolute h-full right-0 mt-32" src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
+                <h1 class="text-accent text-5xl pr-20 py-32 font-light">We are a University of Excellence!</h1>
+            </div>
+            <div class="w-7/12 font-light text-xl py-32 flex flex-col gap-10 leading-relaxed">
+                <p>
+                    With over 100 years of history, the University of Porto is a <span class="font-normal">
+                        leading teaching and scientific
+                        research institution in Portugal and worldwide.
+                    </span>
+                </p>
+                <p>
+                    Considered <span class="font-normal">
+                        the best Portuguese University and one of the best 100 European institutions
+                    </span> according to
+                    the most important Higher Education rankings, U.Porto combines quality teaching and excellent
+                    research with the best academic experience.
+                </p>
+                <p class="font-normal">We are waiting for you!</p>
+                <a class="text-accent font-bold flex items-center gap-2 group text-base" href="#">
+                    See More <span
+                        class="bg-accent text-gray-200 text-xs h-[18px] aspect-square flex-center rounded-full group-hover:translate-x-1 transition-transform"><i class="fa-solid fa-angle-right"></i></span>
+                </a>
             </div>
         </section>
     </main>

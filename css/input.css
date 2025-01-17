@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    [type='text'],
+    input:where(:not([type])),
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply border-2 border-darkgray focus:border-darkgray focus:ring-transparent py-3 px-5 text-xl
+    }
+    
+}
 
 @layer components {
     .flex-center {
@@ -9,6 +30,7 @@
     }
 
     .def-pad {
-        @apply px-4 xl:px-28 
+        @apply px-4 xl:px-28
     }
+
 }
