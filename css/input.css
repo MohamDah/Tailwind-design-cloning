@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .def-pad {
+        @apply px-4 xl:px-28 
+    }
+}

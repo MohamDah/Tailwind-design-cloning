@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Clone 2</title>
 
     <link rel="stylesheet" href="css/output.css">
+
+    <script src="https://kit.fontawesome.com/851cf748e1.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <div class="w-12 h-12 bg-red-500"></div>
+
+<body class="font-lato text-darkgray">
+    <header
+        class="hidden gap-1 px-1 text-sm font-semibold text-white xl:tracking-tight bg-darkgray xl:px-28 h-9 mylg:flex">
+        <a class="h-full px-3 text-xs transition flex-center hover:bg-lightgray/10 xl:text-sm" href="#">
+            About the University <i class="ml-2 text-gray-500 fa-solid fa-caret-down"></i>
+        </a>
+        <a class="h-full px-3 text-xs transition flex-center hover:bg-lightgray/10 xl:text-sm" href="#">
+            Faculties <i class="ml-2 fa-solid fa-caret-down text-mediumgray"></i>
+        </a>
+
+        <a class="pr-3 ml-auto flex-center" href="#">
+            <i class="fa-regular fa-newspaper"></i>
+        </a>
+        <a class="pr-4 flex-center" href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="pr-4 flex-center" href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="pr-4 flex-center" href="#">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="pr-4 flex-center" href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a class="pr-4 flex-center" href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a class="self-center pr-2 ml-8 font-semibold text-mediumgray hover:text-white" href="#">PT</a>
+        <a class="self-center pr-2 font-semibold" href="#">EN</a>
+
+    </header>
+
+    <nav
+        class="sticky top-0 flex items-center justify-start h-[85px] px-6 py-4 mylg:py-0 transition-all duration-300 xl:justify-between mylg:h-28 bg-lightgray xl:px-28">
+        <a class="mr-8 mylg:hidden" href="#">
+            <img class="w-8" src="./assets/bigHam.svg" alt="Hamburger Bars">
+        </a>
+        <a class="h-full flex-center" href="#">
+            <img class="hidden h-12 transition-all duration-300 xl:block" src="./assets/bigLogo.svg" alt="Logo">
+            <img class="block h-full mylg:h-14 xl:hidden" src="./assets/smallLogo.svg" alt="Logo">
+        </a>
+        <div class="hidden gap-4 ml-auto mr-8 font-extrabold xl:mr-12 mylg:flex xl:gap-5 xl:text-xl">
+            <a class="px-1 leading-relaxed border-b-2 border-b-transparent hover:border-b-mediumgray/50" href="#">
+                STUDY
+            </a>
+            <a class="px-1 leading-relaxed border-b-2 border-b-transparent hover:border-b-mediumgray/50" href="#">
+                RESEARCH
+            </a>
+            <a class="px-1 leading-relaxed border-b-2 border-b-transparent hover:border-b-mediumgray/50" href="#">
+                INNOVATE
+            </a>
+            <a class="px-1 leading-relaxed border-b-2 border-b-transparent hover:border-b-mediumgray/50" href="#">
+                LIVE
+            </a>
+            <a class="px-1 leading-relaxed border-b-2 border-b-transparent hover:border-b-mediumgray/50" href="#">
+                EXPLORE
+            </a>
+        </div>
+
+        <button class="border-b border-b-darkgray hidden mylg:flex justify-between items-center w-[120px]">
+            Search <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a class="ml-auto mylg:hidden" href="#">
+            <img class="w-8" src="./assets/smallHam.svg" alt="Hamburger Bars">
+        </a>
+
+    </nav>
+
+    <main class="h-lvh">
+        <section class="h-[400px] mylg:h-[601px] relative pt-px">
+            <div class="absolute h-full -mt-px overflow-hidden -z-10">
+                <img class="object-cover h-full"
+                    src="https://www.up.pt/portal/media/images/slide-estudantes-internacionais-2025-2026.format-jpeg.jpg"
+                    alt="banner1">
+                <div class="absolute bottom-0 w-full mylg:bottom-auto mylg:top-[260px] mylg:left-28 mylg:w-[380px] xl:w-[480px] bg-darkgray/90 text-lightgray p-5">
+                    <h1 class="text-xl mylg:text-2xl font-bold tracking-wide leading-tight">Applications for International Students 2024/2025 are open!</h1>
+                    <p class="mt-4 hidden mylg:block">There are over 700 vacancies for 54 undergraduate and integrated master's courses at U.Porto.
+                        Applications (1st phase) until 7th February!</p>
+                    <button class="mb-10 mt-3 mylg:mb-0 mylg:mt-8 px-2 bg-accent text-darkgray font-extrabold">See More</button>
+                </div>
+            </div>
+            <div class="mt-[100px] mylg:mt-[260px] text-white flex justify-between">
+                <button class="h-11 aspect-square bg-accent">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="h-11 aspect-square bg-accent">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="def-pad">
+            <div>
+                fasdfsadf
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="index.js"></script>
 </body>
+
 </html>
